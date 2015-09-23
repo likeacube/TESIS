@@ -1,0 +1,54 @@
+tareas tesis
+
+- Definir pagina producto - Empresa
+- Crear query para buscarProducto
+
+
+tabla producto, agregar campo descripcion
+
+boostrap - JSF - PRIMEFACES 
+https://www.youtube.com/watch?v=uqtKI0WMDhk
+
+
+---------------------------------------------------
+SELECT * FROM 
+encuentralofacil.producto_empresa proemp,
+encuentralofacil.producto produc,
+encuentralofacil.empresa empr
+WHERE produc.idproduc = 1
+AND proemp.producto_idproduc = produc.idproduc
+AND empr.idemp = proemp.empresa_idemp
+AND empr.idemp = 1;
+---------------------------------------------------
+SELECT * FROM
+encuentralofacil.producto_empresa proemp,
+encuentralofacil.producto produc,
+encuentralofacil.empresa empr
+WHERE proemp.empresa_idemp = 1
+AND proemp.producto_idproduc = produc.idproduc
+AND empr.idemp = proemp.empresa_idemp;
+----------------------------------------------------
+AGREGAR IMAGEN Y TITULO MAPA
+
+<p:gmapInfoWindow>
+<p:graphicImage value="/images/#{mapBean.marker.data.image}" />
+<h:outputText value="#{mapBean.marker.data.title}" />
+</p:gmapInfoWindow>
+
+id="infoWindow"
+
+INFO GMAP
+http://primefaces.googlecode.com/svn-history/examples/trunk/showcase/src/main/java/org/primefaces/examples/view/MapBean.java
+
+se podria concatenar id producto con id empresa en target market
+imagen se podra crear en otra accion ajax y en cual se buscara imagen 
+
+
+---------------------------------------------------
+
+Fondo de imagen
+background="imagen/Santiago_de_Chile_de_noche.jpg"
+
+agregar un megamenu- verticar
+
+
